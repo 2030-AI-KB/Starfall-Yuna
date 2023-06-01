@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        const fruits=["배", "사과", "키위", "바나나"];
+        console.log(fruits);
+        console.log("첫번째 과일은 "+fruits[0]);
+        console.log("두번째 과일은 "+fruits[1]);
+        console.log("세번째 과일은 "+fruits[2]);
+        console.log("네번째 과일은 "+fruits[3]);
+        console.log("총 과일의 가짓수는 "+fruits.length+"가지입니다.\n");
+
+        console.log("\"망고\"를 추가합니다.");
+        fruits.push("망고");
+        console.log("\"귤\"을 추가합니다.");
+        fruits[10]="귤";
+        console.log(fruits);
+        console.log("");
+
+        console.log("\"배\", \"사과\"를 목록에서 제거합니다.");
+        fruits.splice(0,2);
+        console.log(fruits);
+
+        
+    </script>
+</body>
+</html>

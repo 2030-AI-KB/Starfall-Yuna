@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        let n1=prompt("덧셈을 수행할 첫번째 숫자를 입력하세요.");
+        let n2=prompt("덧셈을 수행할 두번째 숫자를 입력하세요.");
+        alert("결과는 콘솔창에서 확인하세요.");
+
+        n2-=0;
+        let sum=Number(n1)+n2;
+        console.log("덧셈의 결과는 "+sum);
+
+        console.log("덧셈 결과 문자열로 변환: "+String(sum));
+        console.log("형 변환한 sum의 타입: "+typeof(String(sum)));
+
+        let name=prompt("이름을 입력하세요", "미공개");
+        let age=prompt("나이를 입력하세요", "미공개");
+
+        let b=confirm("이대로 저장하겠습니까?");
+
+        if(b==true){
+            alert(`이름은 ${name}\n나이는 ${age}`);
+        }
+    </script>
+</body>
+</html>

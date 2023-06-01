@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        let score=prompt("이번 학기의 성적을 입력해주세요.", "F");
+
+        let sc=0;
+        switch(score[0]){
+            case "A":   sc+=4.0;  break;
+            case "B":   sc+=3;  break;
+            case "C":   sc+=2;  break;
+            case "D":   sc+=1;  
+        }
+        if(score[0]!="F"){
+            switch(score[1]){
+                case '-':   sc-=0.3;    break;
+                case '+':   sc+=0.3;    break;
+            }
+        }
+        alert("이번 학기의 평점은 "+sc+"점입니다.");
+
+        let t=sc%2==0?true:false;
+        switch(t){
+            case true:  console.log("평점이 짝수입니다.");  break;
+            case false: console.log("평점이 홀수입니다.");  break;
+        }
+
+        let request=prompt("학점을 다시 입력해주세요.(이번엔 숫자로)", "0");
+        request-=0;
+        if(request==4.5){
+            alert("당신은 신입니다.");
+        }
+        else if(request>=4.2&&request<4.5){
+            alert("당신은 교수님의 사랑입니다.");
+        }
+        else if(request>=3.5&&request<4.2){
+            alert("당신은 현 체제의 수호자입니다.");
+        }
+        else if(request>=2.8&&request<3.5){
+            alert("당신은 일반인입니다.");
+        }
+        else if(request>=2.3&&request<2.8){
+            alert("당신은 일탈을 꿈꾸는 소시민입니다.");
+        }
+        else if(request>=1.75&&request<2.3){
+            alert("당신은 오락문화의 선구자입니다.");
+        }
+        else if(request>=1.0&&request<1.75){
+            alert("당신은 불가촉천민입니다.");
+        }
+        else{
+            alert("당신은 플랑크톤입니다.");
+        }
+
+        let year=prompt("태어날 년도를 입력하세요.");
+        year-=0;
+        const tti="원숭이,닭,개,돼지,쥐,소,호랑이,토끼,용,뱀,말,양".split(",");
+        alert(`${year}년에 태어났다면, ${tti[year%12]}띠입니다.`);
+    </script>
+</body>
+</html>

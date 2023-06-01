@@ -1,0 +1,11 @@
+1. Java :: 워크스페이스에 작성한 수업 관련 프로젝트 통째로 복붙
+
+2. html, css :: html, css와 관련하여, vscode로 작성한 파일 복붙
+
+3. js, jq :: js, jq와 관련하여, vscode로 작성한 파일 복붙
+
+4. python :: 수업과 관련하여 작성한 jupyter notebook 파일 복붙
+
+5. Sql :: 수업 관련하여 작성한 .sql 파일 복붙
+
+6. Jsp :: 수업 관련하여 작성한 Jsp 프로젝트 통째로 복붙

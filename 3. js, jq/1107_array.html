@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const lunch=["초밥", "컵밥", "국밥", "마라탕", "텐동"];
+        console.log(lunch);
+        for(let i=0;i<lunch.length;i++){
+            console.log(lunch[i]);
+        }
+
+        lunch.push("짜장면");
+        lunch.push("햄버거");
+        console.log(lunch);
+
+        lunch.splice(0, 1);
+        console.log("초밥 안 땡김");
+        console.log(lunch);
+
+        lunch.splice(1, 2);
+        console.log("국물 있는 건 살찌니까 기각(국밥, 마라탕 삭제)");
+        console.log(lunch);
+
+        const index=lunch.indexOf("햄버거");
+        lunch.splice(index, 1);
+        console.log("빵은 간식이지 밥이 아니다 이마리야(햄버거 삭제)");
+        console.log(lunch);
+
+        lunch.splice(1, 0, "분식");
+        console.log("떡볶이는 못 참지");
+        console.log(lunch);_
+    </script>
+</body>
+</html>

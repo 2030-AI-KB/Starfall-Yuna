@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const dinner=["초밥", "라멘", "마라탕","국밥", "쌀국수"];
+
+        console.log("for in 반복문 사용");
+        for(let i in dinner){
+            console.log(i+"번째 저녁 후보: "+dinner[i]);
+        }
+
+        console.log("");
+        console.log("for of 반복문 사용");
+        for(let index of dinner){
+            console.log(`저녁 메뉴 후보: ${index}`);
+        }
+
+        let num=1;
+        while(confirm("계속 진행하시겠습니까?")){
+            alert(`${num}번째 알림입니다.`);
+            num++;
+        }
+    </script>
+</body>
+</html>

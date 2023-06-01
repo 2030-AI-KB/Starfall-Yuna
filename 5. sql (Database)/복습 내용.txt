@@ -1,0 +1,24 @@
+-- 테이블 만들기 (+제약 조건) -> create table
+
+-- 데이터 삽입 -> insert into
+
+-- 데이터 삭제-> delete from
+
+-- 데이터 수정 -> update ~ set ~
+
+-- 데이터 조회 -> select
+
+-- 2개 이상 테이블 연결 => 외래키
+-- foreign key () references ()
+
+-- 테이블 수정 -> alter (add: 열 추가)
+
+-- 중첩질의 -> select 중첩 (where 속)
+
+-- 조인 -> join
+--join ~ on (동일한 열 정의)
+
+-- 코드 길어지는 걸 방지하거나 자주 쓰는 구문은 뷰로 등록
+-- create view
+
+-- group by -> 열의 값대로 나눔 (having : where과 같은 역할)

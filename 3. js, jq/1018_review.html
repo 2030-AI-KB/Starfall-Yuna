@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 문자열 (문자형 배열)
+        const hello="안녕하세요.";
+        console.log(hello[hello.length-1]);
+
+        // 문자열 배열
+        const coffee=["아메", "라떼", "바닐라","모카"];
+        console.log(coffee);
+        console.log("커피 가짓수는 "+coffee.length+"가지");
+        console.log("내가 자주 마시는 커피는 "+coffee[0]);
+        console.log("내가 가끔 마시는 커피는 "+coffee[coffee.length-1]);
+
+        // 요소 추가하기
+        coffee.push("카푸치노");
+        coffee.push("프라푸치노");
+        console.log(coffee);
+        console.log("당 땡길 때 마시는 커피는 "+coffee[coffee.length-1]);
+
+        coffee[10]="아이스크림라떼";
+        console.log(coffee);
+        console.log("저세상 커피는 "+coffee[10]);
+
+        // 요소 제거하기
+        console.log("하나 제거하기");
+        coffee.splice(5,2);
+        console.log(coffee);
+        console.log("여러개 제거하기");
+    </script>
+</body>
+</html>
